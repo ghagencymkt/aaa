@@ -59,12 +59,39 @@
             <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
 
             <!-- Headline -->
-            <h3 class="my-4"><b>6 ingredientes Simples Que Fazem O Corpo Queimar Até 13Kg Em 30 Dias</b></h3>
+            <h3 class="my-4"><b><span style="color:#FF7709"><span id="number"></span></span> pessoas estão assistindo a esse vídeo. Devido à alta demanda de acessos, garantimos a apresentação somente até <span style="color:#FF7709"><span id="descounttime"></span></span></b>
+
+<script language="javascript">
+
+var getdayMonth = new Array("01", "02", "03", "04", "05", "06", "07","08", "09", "10", "11", "12");
+var getNow = new Date();
+var dayOfTheWeek = getNow.getDay();
+getNow.setTime(getNow.getTime() - 0 * 24 * 60 * 60 * 1000);
+document.getElementById("descounttime").innerHTML =  getNow.getDate() + "/" + getdayMonth[(getNow.getMonth())] + "/" + getNow.getFullYear();
+
+</script>
+
+<script>
+function add(){number+=Math.floor((Math.random()*6)+1);document.getElementById("number").innerHTML=number;setTimeout("add()",10000);}        
+function generate(){number=Math.floor(Math.random()*11)+11;document.getElementById("number").innerHTML=number;add();}
+generate();</script> </h3>
 
             <!-- VSL -->
-            <script type="text/javascript" id="scr_62279575aa8f7e00086fa73e">var s=document.createElement("script");s.src="https://cdn.converteai.net/ccdae62e-116b-492f-9648-160a0c5bfcc3/players/62279575aa8f7e00086fa73e/player.js",s.async=!0,document.head.appendChild(s);</script>
+            <div style="position:relative;padding-top:56.25%;"><iframe id="panda-378c2794-0c88-424b-8d24-bd3301db396c" src="https://player-vz-ff0450d7-006.tv.pandavideo.com.br/embed/?v=378c2794-0c88-424b-8d24-bd3301db396c" style="border:none;position:absolute;top:0;left:0;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true width="100%" height="100%"></iframe></div>
 
-         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+            <!-- Botão 1 -->
+            <div id="cta1" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/HkrDVPl" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">QUERO OBTER ACESSO!</span>
+                <span class="span-btn2">(atenção: vagas limitadas)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -125,23 +152,11 @@
             msg_final += decodeURIComponent(escape(" " + phrase + " " + product_name));
             toastr.success(msg_final);
             var rand = Math.floor(Math.random() * (max_time - min_time + 1) + min_time);
-            setTimeout(show_notification, rand * 60);
+            setTimeout(show_notification, rand * 1000);
         }
 
         show_notification();
     </script>
-            
-            <!-- Botão 1 -->
-            <div id="cta1" class="mt-4 d-none">
-              <a href="https://pay.kiwify.com.br/HkrDVPl" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUERO OBTER ACESSO!</span>
-                <span class="span-btn2">(atenção: vagas limitadas)</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
 
     <section class="comments py-4">
       <div class="container">
@@ -511,8 +526,8 @@
             <!-- Botão 2 -->
             <div id="cta2" class="mt-4 d-none">
               <a href="https://pay.kiwify.com.br/HkrDVPl" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUERO OBTER ACESSO!</span>
-                <span class="span-btn2">(atenção: vagas limitadas)</span>
+                <span class="span-btn">QUERO EMAGRECER AGORA!</span>
+                <span class="span-btn2"> OFERTA VÁLIDA ATÉ </span>
               </a>
             </div>
           </div>
@@ -525,7 +540,7 @@
     </footer>
 
     <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 1637000); // temporização da Call to Action (em milissegundos)
+      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 1); // temporização da Call to Action (em milissegundos)
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
