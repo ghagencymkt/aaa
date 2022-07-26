@@ -88,6 +88,16 @@ generate();</script> </h5>
       </div>
     </header>
 
+<!--INÍCIO DO SCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>$.get("https://ipinfo.io/json", function (response) { $("#address").html(response.city);
+}, "jsonp");
+</script>
+
+<!--FIM DO SCRIPT-->
+
     <section class="comments py-4">
       <div class="container">
         <div class="row justify-content-center">
@@ -109,7 +119,7 @@ generate();</script> </h5>
                       </td>
                     </tr>
                     <tr>
-                      <td class="fb-comments-comment-text">Amei vou fazer hoje mesmo pois estou em processo de emagrecimento. Muito obrigada 😘</td>
+                      <td class="fb-comments-comment-text"> Só digo uma coisa... FAÇAM! Vocês vão amar, já estou contando pra todo mundo aqui de <span id="address" style="color:#ff0000;">Salvador</span> </td>
                     </tr>
                     <tr>
                       <td class="fb-comments-comment-actions">
