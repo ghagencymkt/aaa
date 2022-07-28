@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-   
-    <link rel="preload" href="https://scripts.converteai.net/fe947590-e9e2-48f3-87cf-5b819dc8293d/players/62e0bb98c0e469000aa6d911/player.js" as="script">
-<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
-<link rel="preload" href="https://images.converteai.net/fe947590-e9e2-48f3-87cf-5b819dc8293d/players/62e0bb98c0e469000aa6d911/thumbnail.jpg" as="image">
-<link rel="preload" href="https://cdn.converteai.net/fe947590-e9e2-48f3-87cf-5b819dc8293d/62e0bb562e1100000ac8bb27/playlist.m3u8" as="fetch">
-<link rel="dns-prefetch" href="https://cdn.converteai.net">
-<link rel="dns-prefetch" href="https://scripts.converteai.net">
-<link rel="dns-prefetch" href="https://images.converteai.net">
-<link rel="dns-prefetch" href="https://api.vturb.com.br">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -36,8 +27,6 @@
       }
     </style>
     
-    <link rel="prerender" href="https://pay.kiwify.com.br/OiGy5Xh?afid=4YzBh5P5"/>
-    
     <!-- Meta Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -57,11 +46,20 @@
 <!-- End Meta Pixel Code -->
     
   </head>
-                                 
-            <!-- Headline -->
-            <span style="color:#FE0000"><b><span id="number"></span></span> pessoas estão assistindo a esse vídeo. Devido à alta demanda de acessos, garantimos a apresentação somente até <span style="color:#FE0000"><span id="descounttime"></b></span></span>
+  <body>
+    
+    <header class="py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            
+            <!-- Imagem Ultrasecreto -->
+            <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
 
-<script language="javascript">
+            <!-- Headline -->
+            <h4 class="my-4"><b>Devido à alta demanda de acessos, garantimos a apresentação somente até <span style="color:#FE0000"><span id="descounttime"></span></span></b></h4>
+
+            <script language="javascript">
 
 var getdayMonth = new Array("01", "02", "03", "04", "05", "06", "07","08", "09", "10", "11", "12");
 var getNow = new Date();
@@ -70,27 +68,35 @@ getNow.setTime(getNow.getTime() - 0 * 24 * 60 * 60 * 1000);
 document.getElementById("descounttime").innerHTML =  getNow.getDate() + "/" + getdayMonth[(getNow.getMonth())] + "/" + getNow.getFullYear();
 
 </script>
-
-<script>
-function add(){number+=Math.floor((Math.random()*6)+1);document.getElementById("number").innerHTML=number;setTimeout("add()",10000);}        
-function generate(){number=Math.floor(Math.random()*11)+11;document.getElementById("number").innerHTML=number;add();}
-  generate();</script>
-  
-  <body>
-    
-    <header class="py-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">          
-                      
-                         
-            <!-- Imagem Ultrasecreto -->
-            <img class="img-fluid" src="./assets/img/ultrasecreto.svg"><br/>        
-                   
-              
+            
             <!-- VSL -->
             <div id="vid_62e0bb98c0e469000aa6d911" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62e0bb98c0e469000aa6d911" src="https://images.converteai.net/fe947590-e9e2-48f3-87cf-5b819dc8293d/players/62e0bb98c0e469000aa6d911/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62e0bb98c0e469000aa6d911" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62e0bb98c0e469000aa6d911">var s=document.createElement("script");s.src="https://scripts.converteai.net/fe947590-e9e2-48f3-87cf-5b819dc8293d/players/62e0bb98c0e469000aa6d911/player.js",s.async=!0,document.head.appendChild(s);</script>
-                      
+            
+            <br>
+             <div id="viewers">
+  <span></span>  <canvas style="margin-left:1em;margin-right:1em;background-color: #00ff00;width:10px;height:10px;border-radius:100%"></canvas>pessoas estão assistindo a esse vídeo agora! 
+</div>
+<script>
+  document.querySelectorAll("#viewers span")[0].innerHTML = getUsersView();
+
+  setInterval(() => {
+    updatesUsersView();
+  }, 2500);
+
+  function getUsersView() {
+    return Math.floor(Math.random() * (Math.floor(910) - Math.ceil(690))) + Math.ceil(690);
+  }
+
+  function updatesUsersView() {
+    var currentUsers = document.querySelectorAll("#viewers span")[0].innerHTML;
+    var users = Math.floor(Math.random() * (Math.floor(40) - Math.ceil(-40))) + Math.ceil(-40);
+    currentUsers = parseInt(currentUsers) < 690 ? parseInt(currentUsers) + users * user : parseInt(currentUsers) + users;
+    document.querySelectorAll("#viewers span")[0].innerHTML = currentUsers;
+  }
+</script>
+            
+            <br>
+            
             <!-- Botão 1 -->
             <div id="cta1" class="mt-4 d-none">
               <a href="https://pay.kiwify.com.br/OiGy5Xh?afid=4YzBh5P5" class="a-btn" style="text-decoration: none;">
@@ -101,396 +107,9 @@ function generate(){number=Math.floor(Math.random()*11)+11;document.getElementBy
           </div>
         </div>
       </div>
-    </header>    
-    
-<!--INÍCIO DO SCRIPT-->
+    </header>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script>$.get("https://ipinfo.io/json", function (response) { $("#address").html(response.city);
-}, "jsonp");
-</script>
-
-<!--FIM DO SCRIPT-->
-      
-    <section class="comments py-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="fb-comments" style="margin-top: 5px;">
-              <div class="fb-comments-header">
-                <span>21 comentarios</span>
-              </div>
-              <div class="fb-comments-wrapper" id="2">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m2.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Valesca Silva</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Só digo uma coisa... FAÇAM! Vocês vão amar, já estou contando para todo mundo aqui de <span id="address" style="color:#000000;">Salvador</span>...</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>8</likes>
-                        
-                        <date>4 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="3">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m3.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Vitória Pereira</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Depois de algumas semanas aplicando essas dicas tenho que dizer… Fiz as pazes com o espelho 😍, minha qualidade de vida melhorou muito, perdi a insegurança e hoje me sinto mais confiante comigo mesma…</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>9</likes>
-                        
-                        <date>5 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="4">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m4.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Mariana Martins</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Já fazia anos que não me sentia tão bem assim… Não me sinto assim desde meus 23 anos... Estou muito feliz, confiante, totalmente disposta e me encaixando nas minhas roupas favoritas... Meu marido não para de perguntar o que fiz e me elogiar…</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>11</likes>
-                        
-                        <date>12 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="5">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m5.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Juliana Castro</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Saí de 120 para 72… Me olhei no espelho e nem me reconheci. Inclusive, voltei com meu marido no mesmo hotel e finalmente tivemos uma noite incrível! Eu estou radiante!! 😍</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>15</likes>
-                        
-                        <date>19 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="6">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m6.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Isabella Lopes</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Eu prestei muita atenção em cada detalhe da explicação do vídeo, então me comprometi todos os dias a colocar em prática pelas manhãs, e consegui! Saí de 104 para 75 e quero perder mais!</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>17</likes>
-                        
-                        <date>24 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="7">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m7.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Roberta Gomes</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Meu marido não olhava mais para mim... Na verdade nem eu conseguia mais me olhar no espelho! Colocando tudo em prática, minha vida mudou. Sim, estou com 20 a menos, mas não foi só isso que mudou na minha vida.</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>18</likes>
-                        
-                        <date>26 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="9">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img
-                          src="./assets/img/comentarios/m11.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Rafaela Souza</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Após essa descoberta, não demorou muito para o espelho passar a ser meu melhor amigo, meu esposo começou a me elogiar constantemente( coisa que ele não fazia), e minhas amigas do trabalho ficaram em choque quando viram minha reviravolta. Coloquei em pratica tudo que aprendi aqui. Eu fui de 123 para 74, isso fez com que eu recuperasse minha autoestima( me sentia feliz, leve e confiante).</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>22</likes>
-                        
-                        <date>39 min</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <button class="fb-comments-loadmore" onclick="javascript:loadMore();">Carregar mais 5 comentários</button>
-              <div style="display:none" id="more">
-                <div class="fb-comments-wrapper">
-                  <table class="fb-comments-comment" id="10">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m12.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Ana Sofia</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Esse dias fui até o supermercado novamente, e todas aquelas pessoas não sabiam o que tinha acontecido por eu estar tão diferente...</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>41</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper" id="11">
-                  <table class="fb-comments-comment">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m15.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Laura Flores</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Ao receber as recomendações do senhor John Garcia, logo comecei a usar seus ensinamentos. </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>40</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper" id="12">
-                  <table class="fb-comments-comment">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m16.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Daniela Costa</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Ser capaz de voltar ao meu vestido favorito novamente aos 50 anos de idade sem pisar nem um pé na academia ou restringir minhas comidas favoritas nos últimos meses está além de mim.</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>47</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper" id="13">
-                  <table class="fb-comments-comment">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m17.jpeg"></td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Juliana Dias</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">Eu toda empolgada mostrei pra ela esse vídeo sobre nutriente marrom e como mudou minha vida, hoje com 36 anos estou muito feliz e foi quando juto com Kelly tive a ideia de compartilhar em minhas redes sociais essa história com vocês e também o link do vídeo.</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>50</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="fb-comments-wrapper">
-                  <table class="fb-comments-comment" id="14">
-                    <tbody>
-                      <tr>
-                        <td rowspan="3" class="fb-comments-comment-img"><img
-                            src="./assets/img/comentarios/m18.jpeg">
-                        </td>
-                        <td>
-                          <font class="fb-comments-comment-name">
-                            <name>Isabelle Correia</name>
-                          </font>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-text">De 98 para 65! 😍 Aos 58 anos, depois de 20 anos de luta com meus números na balança, finalmente posso voltar a usar meu jeans!</td>
-                      </tr>
-                      <tr>
-                        <td class="fb-comments-comment-actions">
-                          <like>Curtir</like>
-                          ·
-                          <reply>Responder</reply>
-                          ·
-                          <likes>66</likes>
-                          
-                          <date>1 h</date>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <!-- Botão 2 -->
-            <div id="cta2" class="mt-4 d-none">
-              <a href="https://pay.kiwify.com.br/OiGy5Xh?afid=4YzBh5P5" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUERO OBTER ACESSO!</span>
-                <span class="span-btn2">(atenção: vagas limitadas)</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-dark py-3 text-center">
+      <footer class="bg-dark py-3 text-center">
       <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
     </footer>
 
